@@ -1,0 +1,16 @@
+ .rating-primary{
+        font-size: 24px;
+    }
+.rating-secondary{
+    font-size: 15px;
+}
+    .star {
+        color: #ccc;
+    }
+
+    .active {
+        color: #ffcc00;
+    }
+    .review {
+        text-align: left;
+    }

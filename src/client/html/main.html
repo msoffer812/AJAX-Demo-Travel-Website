@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Currency Converter</title>
+    <link href="../css/main.css" rel="stylesheet" />
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="main.html">Main</a>
+                    </li>
+                    <li>
+                        <input type="text" id="countrySearch" placeholder="Search for a country...">
+                        <div id="searchResults"></div>
+                        <div id="countryButtons" class="row"></div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="account_action" class="nav-link font-weight-light text-primary" href="../../server/logout.php">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-brand text-decoration-none text-muted" href="account.html" id="account_link">
+                        <i class="fas fa-user fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="../js/main.js"></script>
+</header>
+<main>
+    <div class="container-fluid">
+        <form action="Information.html" method="GET">
+            <div class="container-fluid mainGallery">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="1" style="background-image: url('../img/IsraelPic.png');">
+                            <h1>Israel</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="2" style="background-image: url('../img/usaPic.png');">
+                            <h1>USA</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="4" style="background-image: url('../img/britainPic.png');">
+                            <h1>Britain</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="5" style="background-image: url('../img/europe.png');">
+                            <h1>Europe</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="7" style="background-image: url('../img/canadaPic.png');">
+                            <h1>Canada</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="8" style="background-image: url('../img/mexicoPic.png');">
+                            <h1>Mexico</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="9" style="background-image: url('../img/japanPic.png');">
+                            <h1>Japan</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="10" style="background-image: url('../img/chinaPic.png');">
+                            <h1>China</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="11" style="background-image: url('../img/australiaPic.png');">
+                            <h1>Australia</h1>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="country-button" name="country" value="12" style="background-image: url('../img/swissPic.png');">
+                            <h1>Switzerland</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

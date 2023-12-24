@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Bootstrap CSS link -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Currency Converter</title>
+  <link href="../css/main.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-transparent">
+    <div class="container">
+      <!-- Empty div to push the item to the right -->
+      <div class="flex-fill"></div>
+      <a class="nav-link navbar-brand" href="login.html">
+        <i class="fas fa-user fa-lg"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- <nav class="navbar fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+ <form class="container-fluid justify-content-start">
+   <a href="main.html" class="btn btn-outline-success me-2" role="button">Main</a>
+     <a href="logIn.html" class="btn btn-outline-success me-2" role="button">Log In</a>
+ </form>
+        </div>
+</nav>-->
+</header>
+<div class="container-fluid">
+  <form action="Information.html" method="GET">
+    <div class="container-fluid mainGallery">
+      <div class="row">
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="1" style="background-image: url('../img/IsraelPic.png');">
+            <h1>Israel</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="2" style="background-image: url('../img/usaPic.png');">
+            <h1>USA</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="4" style="background-image: url('../img/britainPic.png');">
+            <h1>Britain</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="5" style="background-image: url('../img/europe.png');">
+            <h1>Europe</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="7" style="background-image: url('../img/canadaPic.png');">
+            <h1>Canada</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="8" style="background-image: url('../img/mexicoPic.png');">
+            <h1>Mexico</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="9" style="background-image: url('../img/japanPic.png');">
+            <h1>Japan</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="10" style="background-image: url('../img/chinaPic.png');">
+            <h1>China</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="11" style="background-image: url('../img/australiaPic.png');">
+            <h1>Australia</h1>
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="country-button" name="country" value="12" style="background-image: url('../img/swissPic.png');">
+            <h1>USA</h1>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+  $(document).ready(function() {
+    // When the document is ready, attach the hover effect to the .country-button
+    $('.country-button').hover(
+            function() {
+              // On hover in
+              $(this).css('background-size', '150%');
+            },
+            function() {
+              // On hover out
+              $(this).css('background-size', 'cover');
+            }
+    );
+  });
+
+</script>
+<!--<div class="container">
+    <h1 class="mt-4">Select a Country</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <form action="information.html" method="GET">
+                <button type="submit" class="country-button" name="country" value="1" style="background-image: url('IsraelPic.png');">
+                    <h1>Israel</h1>
+                </button>
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form action="information.html" method="GET">
+                <button type="submit" class="country-button" name="country" value="2" style="background-image: url('usaPic.png');">
+                    <h1>USA</h1>
+                </button>
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form action="information.html" method="GET">
+                <button type="submit" class="country-button" name="country" value="4" style="background-image: url('britainPic.png');">
+                    <h1>Britain</h1>
+                </button>
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form action="information.html" method="GET">
+                <button type="submit" class="country-button" name="country" value="5" style="background-image: url('europe.png');">
+                    <h1>Europe</h1>
+                </button>
+            </form>
+        </div>
+        Add more buttons following the same structure
+    </div>
+</div>
+-->
+
+
+
+</body>
+</html>

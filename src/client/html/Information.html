@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/starsRating.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="../css/popup.css" rel="stylesheet">
+    <title>Location</title>
+</head>
+<body>
+<header>
+    <nav style="height: 15vh;" class="navbar navbar-expand-lg navbar-light bg-light bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">Main</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="account_action" class="nav-link font-weight-light text-primary" href="../../server/logout.php">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-brand text-decoration-none text-muted" href="account.html" id="account_link">
+                        <i class="fas fa-user fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div id="country">
+        <h1></h1>
+    </div>
+    <div id="description">
+        <p><em></em></p>
+    </div>
+    <form id="currencyConverter" style="padding-top: 15vh">
+        <label for="original">
+            <select id="baseCurrency">
+            </select>
+        </label>
+        <input type="number" id="original" step="0.01" min="0" name="money" required>
+        <button id="switchCurrency">Switch</button>
+        <label for="result">
+            <select id="convertedCurrency">
+                <option selected value="NONE">No Currency Selected</option>
+                <!-- Add other currency options -->
+            </select>
+        </label>
+        <input type="text" id="result">
+        <input type="submit">
+    </form>
+</div>
+
+<div id="map" style="width: 100%; height: 400px;"></div>
+<div class="overlay"></div>
+
+<div class="popup">
+    <!-- Popup content -->
+    <div class="container">
+        <nav class="fixed-top navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Navbar Toggler Icon -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-times fa-lg"></i> <!-- FontAwesome "x" icon -->
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class=" close-popup fas fa-times fa-lg"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h2>Activities</h2>
+        <div id="activity-container"></div>
+    </div>
+</div>
+
+<div class="container" style="text-align: center; padding-top:5vh;">
+    <button class="open-popup btn btn-primary">Create Itinerary</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/getInfo.js"></script>
+<script src="../js/itinerary.js"></script>
+<script src="../js/fiveStarRating.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDOR2kWa1A79F6iLOtuExM5W-TKVXHMrA&callback=initMap" async defer></script>
+</body>
+</html>

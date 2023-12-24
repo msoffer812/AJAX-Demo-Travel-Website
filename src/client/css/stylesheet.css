@@ -1,0 +1,86 @@
+* {
+   margin: 0;
+   padding: 0px;
+}
+
+nav a{
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   font-size: 0.8em;
+
+}
+
+nav a {
+   color: #222;
+   text-decoration: none;
+   display: flex;
+   margin-bottom: 5%;
+
+
+}
+
+nav a {
+   display: inline-block;
+   width: 30%;
+   text-align: center;
+   border: thin solid black;
+   border-collapse: collapse;
+   padding: 10px 20px;
+   font-size: 1.5em;
+   horiz-align: center;
+
+}
+
+
+body {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+   margin: 0 auto;
+   padding: 20px 25px;
+   text-align: center;
+  /* background-image: url("IsraelPic.png");
+   background-size: cover;
+   background-repeat: no-repeat;*/
+
+}
+main {
+   text-align: center;
+}
+
+p{
+   padding-left: 10%;
+   padding-right: 10%;
+   font-size: 20px;
+}
+ul{
+   font-size: 20px;
+   padding-left:45%;
+   text-align: left;
+}
+
+
+h2{
+   font-size: 30px;
+   padding-top: 2%;
+}
+
+form img {
+        width: 348px; /* Set the desired width for the images */
+        height: 348px; /* Set the desired height for the images */
+        object-fit: cover;
+}
+
+#currencyConverter {
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+
+}
+#result {
+    color: #333;
+    padding: 10px;
+}
+#original{
+    color: #333;
+    padding: 10px;
+}
+

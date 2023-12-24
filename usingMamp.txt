@@ -1,0 +1,21 @@
+
+Setting up database:
+Open up mamp control bar, if installed it should be there.
+click start servers.
+Click 'open webstart page'
+click 'tools' in the navbar
+click PHPMYADMIN
+On this new page, there's be a 'SQL' icon. Copy and paste from the sql file. IF that doesn't work, also try 'import' on the navbar, uploading the database should work.
+
+Now to run the website:
+ 1.Put the website folder in MAMP/htdocs
+2. go to browser, go to localhost/projectName/.....to the html file you want to be on. The frontend is in the html folder, etc.
+
+Here are some emails and passwords for logging in:
+JohnSmith@gmail.com  Meira1234567  
+JonathanStroud@gmail.com bluetooth5678  
+SamCooke@gmail.com  123456789hi  
+BeckyJS@gmail.com  cvnretu8u34c 
+TerryPratchett@gmail.com  xdkfajds  
+AgathaChristie@gmail.com  blockseventeen  
+LMK if there are issues!
