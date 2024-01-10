@@ -301,7 +301,7 @@ $(document).ready(function () {
           let base = document.querySelector('#baseCurrency').value;
           let other = document.querySelector('#convertedCurrency').value;
         // Get currency rates from base currency to other currency
-          fetch('https://v6.exchangerate-api.com/v6/b1d04f12d4505b848e4df035/pair/' + base + '/' + other)
+          fetch('API_LINK_HERE' + base + '/' + other)
               .then(api => api.json())
               .then(data => {
                   if (data.result === "success") {
